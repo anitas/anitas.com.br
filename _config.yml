@@ -1,8 +1,8 @@
 # Site settings
 title: DentistSmile | Dental Jekyll Theme
 description: "A responsive Jekyll theme for dental clinics."
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the name of your domain
+baseurl: "/anitas.com.br"
+url: "https://anitas.github.io/"
 logo_url: svg/min/logo.svg
 
 # Hero
