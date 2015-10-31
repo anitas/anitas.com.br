@@ -14,7 +14,7 @@ layout: default
     </div>
 
     <div class="container-fluid">
-        
+
         <div class="col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8 form">
             <h3><svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>Make an Appointment</h3>
             <form action="https://getsimpleform.com/messages?form_api_token={{ site.api_token }}" method="post">
@@ -80,7 +80,7 @@ layout: default
 <!-- End 3 columns -->
 
 <!-- Start About -->
-<div id="about" class="about">
+<div id="manifesto" class="about">
     <div class="container-fluid">
         <h2 class="section-title">About Us</h2>
 
@@ -131,9 +131,9 @@ layout: default
 <!-- End About -->
 
 <!-- Start Treatments -->
-<div id="treatments" class="treatments">
+<div id="acoes" class="treatments">
     <div class="container-fluid">
-        <h2 class="section-title">Treatments</h2>
+        <h2 class="section-title">Ações</h2>
 
         <div class="row">
             {% for treatment in site.data.treatments %}
@@ -151,18 +151,19 @@ layout: default
 <!-- End Treatments -->
 
 <!-- Start Our team -->
-<div id="team" class="team"> 
-    <h2 class="section-title">Our Team</h2> 
+<div id="team" class="team">
+    <h2 class="section-title">Our Team</h2>
     <div id="team-carousel">
     {% for member in site.data.team %}
         <div class="expandable-box">
             <div class="expandable-box-top">
                 <img src="{{ site.baseurl }}/img/{{ member.image }}" alt="{{ member.name }}">
                 <h4>{{ member.name }}</h4>
+                <p>{{ member.description }}</p>
             </div>
             <div class="expandable-box-bottom">
                 <span data-toggle="tooltip" data-placement="bottom" title="{{ member.email }}"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></span>
-                <span data-toggle="tooltip" data-placement="bottom" title="{{ member.phone }}"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></span>
+                <span data-toggle="tooltip" data-placement="bottom" title="{{ member.facebook }}"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></span>
             </div>
         </div>
     {% endfor %}
@@ -196,7 +197,7 @@ layout: default
 
 <!-- Start Gallery -->
 <div id="gallery" class="gallery">
-        
+
     <h2 class="section-title">Gallery</h2>
 
     {% for images in site.data.gallery %}

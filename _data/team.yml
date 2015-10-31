@@ -1,11 +1,23 @@
 - name: Júlia Machado
   image: team.jpg
   email: contato@anitas.com.br
+  facebook: julia.m.pinto.7
+  description: texto
 
 - name: Ana Locks
   image: team.jpg
   email: contato@anitas.com.br
+  facebook: julia.m.pinto.7
+  description: texto
 
 - name: Desirée Maria
   image: team.jpg
   email: contato@anitas.com.br
+  facebook: julia.m.pinto.7
+  description: texto
+
+- name: Desirée Maria
+  image: team.jpg
+  email: contato@anitas.com.br
+  facebook: julia.m.pinto.7
+  description: texto
