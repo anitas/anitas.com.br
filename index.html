@@ -1,64 +1,218 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>anitas.com.br by anitas</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">anitas.com.br</h1>
-      <h2 class="project-tagline">Empreendedoras em Tecnologia </h2>
-      <a href="https://github.com/anitas/anitas.com.br" class="btn">View on GitHub</a>
-      <a href="https://github.com/anitas/anitas.com.br/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/anitas/anitas.com.br/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+---
+layout: default
+---
 
-    <section class="main-content">
-      <h3>
-<a id="o-que-é-o-anitas" class="anchor" href="#o-que-%C3%A9-o-anitas" aria-hidden="true"><span class="octicon octicon-link"></span></a>O que é o Anitas?</h3>
+<!-- Start Hero -->
+<div class="hero" style="background: url('{{ site.baseurl }}/img/{{ site.hero.hero_img }}') no-repeat; background-size: cover;">
+    <div class="hero-content">
+        <div class="container-fluid">
+            <div class="hero-content-inner">
+                <h1>{{ site.hero.hero_title }}</h1>
+                <p>{{ site.hero.hero_description }}</p>
+            </div>
+        </div>
+    </div>
 
-<p>O Anitas (As Anitas?) é um grupo de mulheres engajadas no empoderamento feminino na área de tecnologia e empreendedorismo através da troca de experiências e conhecimentos.</p>
+    <div class="container-fluid">
+        
+        <div class="col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8 form">
+            <h3><svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>Make an Appointment</h3>
+            <form action="https://getsimpleform.com/messages?form_api_token={{ site.api_token }}" method="post">
+                <div class="form-field">
+                    <input name="name" type="text" placeholder="Name" required>
+                </div>
+                <div class="form-field">
+                    <input name="phone" type="tel" placeholder="Phone" required>
+                </div>
+                <div class="form-field">
+                    <input name="email" type="email" placeholder="Email" required>
+                </div>
+                <div class="form-field">
+                    <textarea name="comments" placeholder="Message" required></textarea>
+                </div>
+                <input type="submit" class="btn btn-default" value="Send">
+            </form>
+        </div>
 
-<h3>
-<a id="o-que-queremos" class="anchor" href="#o-que-queremos" aria-hidden="true"><span class="octicon octicon-link"></span></a>O que queremos?</h3>
+    </div>
+</div>
+<!-- End Hero -->
 
-<p>Queremos que as mulheres se sintam confiantes, seguras e empoderadas para realizar tudo o que desejam, sendo reconhecidas por seus trabalhos. Se a alguma mulher deseja aprender a programar, ela pode! Se alguma mulher deseja abrir seu próprio negócio, ela pode! Se alguma mulher deseja liderar uma equipe, ela pode! Nós podemos tudo isso! E o Anitas está aqui para ajudar as mulheres a colocar seus sonhos em prática. Com isso, esperamos contribuir para a igualdade de gênero nas oportunidades e nas escolhas profissionais.
-Queremos, também, inspirar mulheres a serem mais comprometidas com suas escolhas e a serem mais solidárias, inspirando outras mulheres a partir de suas conquistas. Juntas somos mais fortes! :)</p>
+<!-- Start 3 columns -->
+<div class="three-shade-col">
+    <div class="col-sm-4">
+        <svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>
+        <h3>Contact Us</h3>
+        <ul>
+            {% if site.contact.phone %}<li><strong>Phone:</strong> {{ site.contact.phone }}</li>{% endif %}
+            {% if site.contact.emergency %}<li><strong>Emergency:</strong> {{ site.contact.emergency }}</li>{% endif %}
+            {% if site.contact.email %}<li><strong>Email:</strong> {{ site.contact.email }}</li>{% endif %}
+        </ul>
+    </div>
+    <div class="col-sm-4">
+        <svg class="icon icon-clock-o"><use xlink:href="#icon-clock-o"></use></svg>
+        <h3>Opening Hours</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Monday – Friday</td>
+                    <td>{{ site.monday_friday }}</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>{{ site.saturday }}</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>{{ site.sunday }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-sm-4">
+        <svg class="icon icon-map-marker"><use xlink:href="#icon-map-marker"></use></svg>
+        <h3>Location</h3>
+            <p>
+                {{ site.contact.address }}
+            </p>
+    </div>
+</div>
+<!-- End 3 columns -->
 
-<h3>
-<a id="para-quem-é-o-anitas" class="anchor" href="#para-quem-%C3%A9-o-anitas" aria-hidden="true"><span class="octicon octicon-link"></span></a>Para quem é o Anitas?</h3>
+<!-- Start About -->
+<div id="about" class="about">
+    <div class="container-fluid">
+        <h2 class="section-title">About Us</h2>
 
-<p>Mulheres que já trabalham com TI, sejam elas técnicas ou não.
-Mulheres que querem trabalhar e/ou empreender na área de TI.
-Mulheres que ainda não conhecem todas as possibilidades da TI.</p>
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Welcome to DentistSmile</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum ab vero temporibus magnam, delectus!</p>
 
-<h3>
-<a id="o-que-fazemos" class="anchor" href="#o-que-fazemos" aria-hidden="true"><span class="octicon octicon-link"></span></a>O que fazemos?</h3>
+                <div class="media">
+                    <div class="media-left">
+                        <div class="boxed-icon">
+                            <svg class="icon icon-heart"><use xlink:href="#icon-heart"></use></svg>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
+                    </div>
+                </div>
 
-<p>O Anitas é um espaço seguro para mulheres trocarem conhecimentos, experiências, dúvidas e ideias. Para isso, organizamos cursos, workshops, palestras e participamos de iniciativas que buscam, de alguma maneira, incluir as mulheres na área de tecnologia e/ou empreendedorismo. O objetivo é assumir um posicionamento mais ativo e transformador das nossas realidades. Saiba mais sobre nossas ações aqui (e link para o MENU &gt; NOSSAS AÇÕES)</p>
+                <div class="media">
+                    <div class="media-left">
+                        <div class="boxed-icon">
+                            <svg class="icon icon-medkit"><use xlink:href="#icon-medkit"></use></svg>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
+                    </div>
+                </div>
 
-<h3>
-<a id="e-quem-cuida-dessa-bagaça-toda" class="anchor" href="#e-quem-cuida-dessa-baga%C3%A7a-toda" aria-hidden="true"><span class="octicon octicon-link"></span></a>E quem cuida dessa bagaça toda?</h3>
+                <div class="media">
+                    <div class="media-left">
+                        <div class="boxed-icon">
+                            <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <img src="img/about.jpg" alt="...">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End About -->
 
-<p>Júlia: quem teve a ideia e nos juntou! [um perfil básico de aprox. 60~100 palavras] + 1 fotinha</p>
+<!-- Start Treatments -->
+<div id="treatments" class="treatments">
+    <div class="container-fluid">
+        <h2 class="section-title">Treatments</h2>
 
-<p>Ana: [um perfil básico de aprox. 60~100 palavras] + 1 fotinha</p>
+        <div class="row">
+            {% for treatment in site.data.treatments %}
+                <div class="col-sm-6 col-md-4">
+                    <div class="icon-box">
+                        <svg class="icon {{ treatment.icon }}"><use xlink:href="#{{ treatment.icon }}"></use></svg>
+                        <h4>{{ treatment.title }}</h4>
+                        <p>{{ treatment.description }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- End Treatments -->
 
-<p>Desirée: [um perfil básico de aprox. 60~100 palavras] + 1 fotinha</p>
+<!-- Start Our team -->
+<div id="team" class="team"> 
+    <h2 class="section-title">Our Team</h2> 
+    <div id="team-carousel">
+    {% for member in site.data.team %}
+        <div class="expandable-box">
+            <div class="expandable-box-top">
+                <img src="{{ site.baseurl }}/img/{{ member.image }}" alt="{{ member.name }}">
+                <h4>{{ member.name }}</h4>
+            </div>
+            <div class="expandable-box-bottom">
+                <span data-toggle="tooltip" data-placement="bottom" title="{{ member.email }}"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></span>
+                <span data-toggle="tooltip" data-placement="bottom" title="{{ member.phone }}"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></span>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+<!-- End Our team -->
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/anitas/anitas.com.br">anitas.com.br</a> is maintained by <a href="https://github.com/anitas">anitas</a>.</span>
+<!-- Start Testimonials -->
+<div id="testimonials" class="testimonials parallax" style="background-image: url('{{ site.baseurl }}/img/{{ site.testimonials.testimonials_img }}');">
+    <div class="overlay-container">
+        <div class="overlay"></div>
+        <div class="container-fluid">
+            <div id="testimonial-carousel">
+                {% for testimonial in site.data.testimonials %}
+                    <div class="testimonial-item">
+                        <svg class="icon icon-quote-left"><use xlink:href="#icon-quote-left"></use></svg>
+                        <blockquote>
+                            <p>{{ testimonial.description }}</p>
+                            <footer>
+                                {{ testimonial.name }}
+                                <small>{{ testimonial.title }}</small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Testimonials -->
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
+<!-- Start Gallery -->
+<div id="gallery" class="gallery">
+        
+    <h2 class="section-title">Gallery</h2>
 
-    </section>
+    {% for images in site.data.gallery %}
+        <a href="{{ site.baseurl }}/img/gallery/large/{{ images.image_large }}" class="gallery-item expandable-box image-link">
+            <div class="expandable-box-top">
+                <img src="{{ site.baseurl }}/img/gallery/thumb/{{ images.image_thumb }}" alt="{{ images.image_alt }}">
+            </div>
+            <div class="expandable-box-bottom">
+                <span><svg class="icon icon-chain"><use xlink:href="#icon-chain"></use></svg></span>
+            </div>
+        </a>
+    {% endfor %}
 
-  
-  </body>
-</html>
+</div>
+<!-- End Gallery -->
+
+<!-- Start Map -->
+<div id="location" class="map" data-zoom="{{ site.map.zoom }}" data-address="{{ site.map.address }}" data-address-details="<img src='{{ site.map.address_details }}'>"></div>
+<!-- End Map -->
