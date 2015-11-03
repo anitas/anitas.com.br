@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<!-- Start Hero -->
+<!-- Início Home -->
 <div class="hero" style="background: url('{{ site.baseurl }}/img/{{ site.hero.hero_img }}') no-repeat; background-size: cover;">
     <div class="hero-content">
         <div class="container-fluid">
@@ -16,79 +16,29 @@ layout: default
     <div class="container-fluid">
 
         <div class="col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8 form">
-            <h3><svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>Make an Appointment</h3>
+            <h3><svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>Receba nossa newsletter</h3>
             <form action="https://getsimpleform.com/messages?form_api_token={{ site.api_token }}" method="post">
                 <div class="form-field">
-                    <input name="name" type="text" placeholder="Name" required>
-                </div>
-                <div class="form-field">
-                    <input name="phone" type="tel" placeholder="Phone" required>
+                    <input name="name" type="text" placeholder="Nome" required>
                 </div>
                 <div class="form-field">
                     <input name="email" type="email" placeholder="Email" required>
                 </div>
-                <div class="form-field">
-                    <textarea name="comments" placeholder="Message" required></textarea>
-                </div>
-                <input type="submit" class="btn btn-default" value="Send">
+                <input type="submit" class="btn btn-default" value="Cadastrar">
             </form>
         </div>
 
     </div>
 </div>
-<!-- End Hero -->
+<!-- Final Home -->
 
-<!-- Start 3 columns -->
-<div class="three-shade-col">
-    <div class="col-sm-4">
-        <svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>
-        <h3>Contact Us</h3>
-        <ul>
-            {% if site.contact.phone %}<li><strong>Phone:</strong> {{ site.contact.phone }}</li>{% endif %}
-            {% if site.contact.emergency %}<li><strong>Emergency:</strong> {{ site.contact.emergency }}</li>{% endif %}
-            {% if site.contact.email %}<li><strong>Email:</strong> {{ site.contact.email }}</li>{% endif %}
-        </ul>
-    </div>
-    <div class="col-sm-4">
-        <svg class="icon icon-clock-o"><use xlink:href="#icon-clock-o"></use></svg>
-        <h3>Opening Hours</h3>
-        <table>
-            <tbody>
-                <tr>
-                    <td>Monday – Friday</td>
-                    <td>{{ site.monday_friday }}</td>
-                </tr>
-                <tr>
-                    <td>Saturday</td>
-                    <td>{{ site.saturday }}</td>
-                </tr>
-                <tr>
-                    <td>Sunday</td>
-                    <td>{{ site.sunday }}</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="col-sm-4">
-        <svg class="icon icon-map-marker"><use xlink:href="#icon-map-marker"></use></svg>
-        <h3>Location</h3>
-            <p>
-                {{ site.contact.address }}
-            </p>
-    </div>
-</div>
-<!-- End 3 columns -->
-
-<!-- Start About -->
-<div id="manifesto" class="about">
+<!-- Início Sobre -->
+<div id="sobre" class="about">
     <div class="container-fluid">
-        <h2 class="section-title">About Us</h2>
+        <h2 class="section-title">Sobre</h2>
 
         <div class="row">
             <div class="col-sm-6">
-                <h3>Welcome to DentistSmile</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum ab vero temporibus magnam, delectus!</p>
-
                 <div class="media">
                     <div class="media-left">
                         <div class="boxed-icon">
@@ -96,7 +46,8 @@ layout: default
                         </div>
                     </div>
                     <div class="media-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
+                        <h4>O que é o Anitas?</h4>
+                        <p>É um grupo de mulheres engajadas no empoderamento feminino na área de tecnologia e empreendedorismo através da troca de experiências e conhecimentos.</p>
                     </div>
                 </div>
 
@@ -107,20 +58,37 @@ layout: default
                         </div>
                     </div>
                     <div class="media-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
+                        <h4>O que queremos?</h4>
+                        <p>Queremos que as mulheres se sintam confiantes, seguras e empoderadas para realizar tudo o que desejam, sendo reconhecidas por seus trabalhos. Se a alguma mulher deseja aprender a programar, ela pode! Se alguma mulher deseja abrir seu próprio negócio, ela pode! Se alguma mulher deseja liderar uma equipe, ela pode! Nós podemos tudo isso! E o Anitas está aqui para ajudar as mulheres a colocar seus sonhos em prática. Com isso, esperamos contribuir para a igualdade de gênero nas oportunidades e nas escolhas profissionais.Queremos, também, inspirar mulheres a serem mais comprometidas com suas escolhas e a serem mais solidárias, inspirando outras mulheres a partir de suas conquistas. Juntas somos mais fortes!</p>
                     </div>
                 </div>
 
                 <div class="media">
                     <div class="media-left">
                         <div class="boxed-icon">
-                            <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+                            <svg class="icon icon-medkit"><use xlink:href="#icon-medkit"></use></svg>
                         </div>
                     </div>
                     <div class="media-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
+                        <h4>Pra quem é o Anitas?</h4>
+                        <p>Mulheres que já trabalham com TI, sejam elas técnicas ou não.</p>
+                        <p>Mulheres que querem trabalhar e/ou empreender na área de TI.</p>
+                        <p>Mulheres que ainda não conhecem todas as possibilidades da TI.</p>
                     </div>
                 </div>
+                <div class="media">
+                    <div class="media-left">
+                        <div class="boxed-icon">
+                            <svg class="icon icon-medkit"><use xlink:href="#icon-medkit"></use></svg>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h4>O que fazemos?</h4>
+                        <p>O Anitas é um espaço seguro para mulheres trocarem conhecimentos, experiências, dúvidas e ideias. Para isso, organizamos cursos, workshops, palestras e participamos de iniciativas que buscam, de alguma maneira, incluir as mulheres na área de tecnologia e/ou empreendedorismo. O objetivo é assumir um posicionamento mais ativo e transformador das nossas realidades.</p>
+                    </div>
+                </div>
+
+                
             </div>
             <div class="col-sm-6">
                 <img src="img/about.jpg" alt="...">
@@ -128,31 +96,31 @@ layout: default
         </div>
     </div>
 </div>
-<!-- End About -->
+<!-- Final Sobre -->
 
-<!-- Start Treatments -->
+<!-- Início Ações -->
 <div id="acoes" class="treatments">
     <div class="container-fluid">
         <h2 class="section-title">Ações</h2>
 
         <div class="row">
-            {% for treatment in site.data.treatments %}
+            {% for acoes in site.data.acoes %}
                 <div class="col-sm-6 col-md-4">
                     <div class="icon-box">
-                        <svg class="icon {{ treatment.icon }}"><use xlink:href="#{{ treatment.icon }}"></use></svg>
-                        <h4>{{ treatment.title }}</h4>
-                        <p>{{ treatment.description }}</p>
+                        <svg class="icon {{ acoes.icon }}"><use xlink:href="#{{ acoes.icon }}"></use></svg>
+                        <h4>{{ acoes.title }}</h4>
+                        <p>{{ acoes.description }}</p>
                     </div>
                 </div>
             {% endfor %}
         </div>
     </div>
 </div>
-<!-- End Treatments -->
+<!-- Final Ações -->
 
-<!-- Start Our team -->
-<div id="team" class="team">
-    <h2 class="section-title">Our Team</h2>
+<!-- Início Quem Somos -->
+<div id="quem-somos" class="team">
+    <h2 class="section-title">Quem Somos</h2>
     <div id="team-carousel">
     {% for member in site.data.team %}
         <div class="expandable-box">
@@ -169,51 +137,10 @@ layout: default
     {% endfor %}
     </div>
 </div>
-<!-- End Our team -->
-
-<!-- Start Testimonials -->
-<div id="testimonials" class="testimonials parallax" style="background-image: url('{{ site.baseurl }}/img/{{ site.testimonials.testimonials_img }}');">
-    <div class="overlay-container">
-        <div class="overlay"></div>
-        <div class="container-fluid">
-            <div id="testimonial-carousel">
-                {% for testimonial in site.data.testimonials %}
-                    <div class="testimonial-item">
-                        <svg class="icon icon-quote-left"><use xlink:href="#icon-quote-left"></use></svg>
-                        <blockquote>
-                            <p>{{ testimonial.description }}</p>
-                            <footer>
-                                {{ testimonial.name }}
-                                <small>{{ testimonial.title }}</small>
-                            </footer>
-                        </blockquote>
-                    </div>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Testimonials -->
-
-<!-- Start Gallery -->
-<div id="gallery" class="gallery">
-
-    <h2 class="section-title">Gallery</h2>
-
-    {% for images in site.data.gallery %}
-        <a href="{{ site.baseurl }}/img/gallery/large/{{ images.image_large }}" class="gallery-item expandable-box image-link">
-            <div class="expandable-box-top">
-                <img src="{{ site.baseurl }}/img/gallery/thumb/{{ images.image_thumb }}" alt="{{ images.image_alt }}">
-            </div>
-            <div class="expandable-box-bottom">
-                <span><svg class="icon icon-chain"><use xlink:href="#icon-chain"></use></svg></span>
-            </div>
-        </a>
-    {% endfor %}
-
-</div>
-<!-- End Gallery -->
+<!-- Final Quem Somos -->
 
 <!-- Start Map -->
-<div id="location" class="map" data-zoom="{{ site.map.zoom }}" data-address="{{ site.map.address }}" data-address-details="<img src='{{ site.map.address_details }}'>"></div>
+<div id="agenda" class="agenda">
+    <iframe src="https://www.google.com/calendar/embed?height=800&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=curtacircuitos.com.br_787fmkms4gh1pqvseuhmt9hnps%40group.calendar.google.com&amp;color=%23B1440E&amp;ctz=America%2FSao_Paulo" style="border-width:0" width="100%" height="800" frameborder="0" scrolling="no"></iframe>
+</div>
 <!-- End Map -->

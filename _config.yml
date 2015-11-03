@@ -1,15 +1,15 @@
 # Site settings
-title: DentistSmile | Dental Jekyll Theme
+title: Anitas
 description: "A responsive Jekyll theme for dental clinics."
-baseurl: "/anitas.com.br"
-url: "https://anitas.github.io/"
+baseurl: ""
+url: "https://anitas.com.br/"
 logo_url: svg/min/logo.svg
 
 # Hero
 hero: 
     hero_img: hero.jpg
-    hero_title: DentistSmile
-    hero_description: A responsive Jekyll theme for dental clinics.
+    hero_title: Empreendedoras em Tecnologia
+    hero_description: 
 
 # Contact form
 api_token: # Enter API token here
@@ -45,7 +45,7 @@ skype: skype:obaez_design?userinfo
 feed: yes
 
 # Footer
-copyright: © 2015 DentistSmile - All rights reserved
+copyright: © 2015 Anitas - Todos os direitos reservados
 
 # Build settings
 markdown: kramdown
