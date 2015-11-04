@@ -1,23 +1,23 @@
-- icon: icon-user-md
-  title: Technovation
+- icon: globe
+  title: Technovation Challenge
   description: Programa mundial que ensina conceitos detecnologia e empreendedorismo para meninas
 
-- icon: icon-diamond
+- icon: user-plus
   title: Anitas encontros
   description: Encontros mensais com as participantes do grupo para promover o empoderamento feminino 
 
-- icon: icon-flask
+- icon: gears
   title: Workshops
   description: Workshops de tecnologia e empreendedorismo 
 
-- icon: icon-globe
+- icon: industry
   title: Programa de diversidade nas empresas
   description: Palestras e consultorias nas empresas para aumentar a participação das mulheres no mercado de tecnologia
 
-- icon: icon-ambulance
+- icon: graduation-cap
   title: Anitas nas escolas
   description: Ações nas escolas de ensino médio e fundamental para estimular a participação das meninas na tecnologia 
 
-- icon: icon-bed
+- icon: comments
   title: Encontros de Networking
   description: Aumentando as conexões entre as mulheres do setor na região

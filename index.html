@@ -42,7 +42,7 @@ layout: default
                 <div class="media">
                     <div class="media-left">
                         <div class="boxed-icon">
-                            <svg class="icon icon-heart"><use xlink:href="#icon-group"></use></svg>
+                            <i class="icon fa fa-group fa-2x"></i>
                         </div>
                     </div>
                     <div class="media-body">
@@ -54,7 +54,7 @@ layout: default
                 <div class="media">
                     <div class="media-left">
                         <div class="boxed-icon">
-                            <svg class="icon icon-medkit"><use xlink:href="#icon-laptop"></use></svg>
+                            <i class="icon fa fa-laptop fa-2x"></i>
                         </div>
                     </div>
                     <div class="media-body">
@@ -66,7 +66,7 @@ layout: default
                 <div class="media">
                     <div class="media-left">
                         <div class="boxed-icon">
-                            <svg class="icon icon-medkit"><use xlink:href="#icon-female"></use></svg>
+                            <i class="icon fa fa-female fa-2x"></i>
                         </div>
                     </div>
                     <div class="media-body">
@@ -76,12 +76,14 @@ layout: default
                         <p>Mulheres que ainda não conhecem todas as possibilidades da TI.</p>
                     </div>
                 </div>
+
                 <div class="media">
                     <div class="media-left">
                         <div class="boxed-icon">
-                            <svg class="icon icon-medkit"><use xlink:href="#icon-comment"></use></svg>
+                            <i class="icon fa fa-comment fa-2x"></i>
                         </div>
                     </div>
+
                     <div class="media-body">
                         <h4>O que fazemos?</h4>
                         <p>O Anitas é um espaço seguro para mulheres trocarem conhecimentos, experiências, dúvidas e ideias. Para isso, organizamos cursos, workshops, palestras e participamos de iniciativas que buscam, de alguma maneira, incluir as mulheres na área de tecnologia e/ou empreendedorismo. O objetivo é assumir um posicionamento mais ativo e transformador das nossas realidades.</p>
@@ -104,12 +106,12 @@ layout: default
         <h2 class="section-title">Ações</h2>
 
         <div class="row">
-            {% for acoes in site.data.acoes %}
+            {% for acao in site.data.acoes %}
                 <div class="col-sm-6 col-md-4">
                     <div class="icon-box">
-                        <svg class="icon {{ acoes.icon }}"><use xlink:href="#{{ acoes.icon }}"></use></svg>
-                        <h4>{{ acoes.title }}</h4>
-                        <p>{{ acoes.description }}</p>
+                        <i class="icon fa fa-{{ acao.icon}} fa-2x"></i>
+                        <h4>{{ acao.title }}</h4>
+                        <p>{{ acao.description }}</p>
                     </div>
                 </div>
             {% endfor %}
