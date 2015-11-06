@@ -1,17 +1,17 @@
 - name: Júlia Machado
-  image: team.jpg
+  image: julia.jpg
   email: contato@anitas.com.br
   facebook: julia.m.pinto.7
-  description: texto
+  description: "Idealizadora e fundadora do Anitas, formada em Comunicação, mas acabou trabalhando com gerência de projetos de software. Descobrindo como soldar componentes e programar, adora juntar as pessoas pra aprender, cozinhar e mudar o mundo."
 
 - name: Ana Locks
-  image: team.jpg
+  image: ana.jpg
   email: contato@anitas.com.br
-  facebook: julia.m.pinto.7
-  description: texto
+  facebook: ana.locks1
+  description: "Fundadora do Anitas e formada em moda. É empreendedora a mais de 10 anos, troca o visual com frequencia sem trocar o pensamento curioso e inquieto."
 
 - name: Desirée Maria
-  image: team.jpg
+  image: desi.jpg
   email: contato@anitas.com.br
-  facebook: julia.m.pinto.7
-  description: texto
+  facebook: "https://www.facebook.com/profile.php?id=100000280160360&fref=ts"
+  description: "Fundadora do Anitas, socióloga e redatora de formação e usuária de tecnologia de coração. Colocou um canal no Mirc no ar aos 15 anos,  porque era fãzaça do Greenday e desde lá vem aprendendo como facilitar a vida usando tecnologia."

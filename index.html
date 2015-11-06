@@ -151,9 +151,16 @@ layout: default
                 <h4>{{ member.name }}</h4>
                 <p>{{ member.description }}</p>
             </div>
+
             <div class="expandable-box-bottom">
-                <span data-toggle="tooltip" data-placement="bottom" title="{{ member.email }}"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></span>
-                <span data-toggle="tooltip" data-placement="bottom" title="{{ member.facebook }}"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></span>
+                <a style="color: white" href="mailto:{{ member.email }}">
+                    <i class="fa fa-envelope"></i>
+                    <small>{{member.email}}</small>
+                </a>
+
+                <a style="color: white" href="http://facebook.com/{{ member.facebook }}">
+                    <i class="fa fa-facebook"></i>
+                </a>
             </div>
         </div>
     {% endfor %}
