@@ -1,0 +1,36 @@
+---
+layout: default
+title: Anitas - Blog
+---
+
+<div class="hero">
+	<div class="container-fluid">
+		{% for post in paginator.posts %}
+		<div class="row">
+			<div class="col-sm-12">
+				<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+				<small>{{ post.date | date_to_string }}</small>
+				{{ post.excerpt }}
+				<small><a href="{{ post.url }}">continuar lendo...</a></small>
+			</div>
+		</div>
+		{% endfor %}
+
+		<hr/>
+		<div class="row">
+			<div class="col-sm-12">
+			  {% if paginator.next_page %}
+			    <a href="{{ paginator.next_page_path }}"><i class="fa fa-chevron-left"></i> mais antigos</a>
+			  {% endif %}
+
+			  {% if paginator.previous_page %}
+			    {% if paginator.page == 2 %}
+			      <a href="{{ site.baseurl }}/blog/"><i class="fa fa-chevron-right"></i> mais recentes</a>
+			    {% else %}
+			      <a chref="{{ paginator.previous_page_}}"><i class="fa fa-chevron-right"></i> mais recentes</a>
+			    {% endif %}
+			  {% endif %}
+			</div>
+		</div>
+	</div>
+</div>

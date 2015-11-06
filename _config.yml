@@ -2,8 +2,18 @@
 baseurl: ""
 url: "https://anitas.com.br/"
 
+permalink: pretty
+
+# paginação do blog
+paginate: 5
+paginate_path: "/blog/:num/"
+excerpt_separator: <!--resumo-->
+
 # Build settings
 markdown: kramdown
+
+kramdown:
+  input: GFM
 
 exclude: [
     package.json,
