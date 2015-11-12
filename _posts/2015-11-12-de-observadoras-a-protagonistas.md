@@ -1,6 +1,7 @@
 ---
 layout: post
 title: De observadoras a protagonistas
+image: images/startup-sc.jpg
 comments: true
 ---
 

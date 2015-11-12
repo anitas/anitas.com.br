@@ -11,6 +11,16 @@
     <meta name="description" content="Anitas - Empreendedoras em Tecnologia">
     <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
 
+    <meta property="og:type" content="{% if page.date %}article{%else%}website{%endif%}"/>
+    <meta property="og:url" content="{{site.url}}{{ page.url }}"/>
+    <meta property="og:title" content="{% if page.title %}{{page.title}}{%else%}Anitas{%endif%}"/>
+    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{%else%}Anitas - Empreendedoras em Tecnologia{%endif%}"/>
+    {% if page.image %}
+    <meta property="og:image" content="{{site.url}}/{{page.image}}"/>
+    {% endif %}
+
+    <meta property="og:locale" content="pt_br"/>
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
