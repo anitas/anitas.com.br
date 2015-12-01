@@ -1,6 +1,6 @@
 # Site settings
 baseurl: ""
-url: "//anitas.com.br/"
+url: "http://anitas.com.br/"
 
 permalink: pretty
 
