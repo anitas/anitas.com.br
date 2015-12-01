@@ -4,9 +4,6 @@ url: "http://anitas.com.br/"
 
 permalink: pretty
 
-# paginação do blog
-paginate: 5
-paginate_path: "/blog/:num/"
 excerpt_separator: <!--resumo-->
 
 analytics: UA-69778566-1
